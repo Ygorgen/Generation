@@ -1,13 +1,16 @@
-package Caso;
+package Exerc1;
 
 import java.util.Scanner;
 
-public class Case {
+public class Switch {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method 
-		int produto,quantidade,soma;
-		float price = 0, total ;
+		// TODO Auto-generated method stub
+
+		
+		
+		int produto,quantidade;
+		float price = 0, total;
 		Scanner leia=new Scanner(System.in);
 		
 		
@@ -26,22 +29,22 @@ public class Case {
 	    switch(produto){
 		
 		case 1: System.out.println("\nÓtima escolha!! Você selecionou o : Cachorro quente");
-		price=(float) 10.00;
+		price= 10.00f;
 			break;
 		case 2: System.out.println("\nÓtima escolha!! Você selecionou o : X-Salada");
-		price=(float) 15.00;
+		price=15.00f;
 			break;
 		case 3: System.out.println("\nÓtima escolha!! Você selecionou o : X-Bacon");
-		price=(float) 18.00;
+		price=18.00f;
 			break;
 		case 4: System.out.println("\nÓtima escolha!! Você selecionou o : Bauru");
-		price=(float) 12.00;
+		price=12.00f;
 			break;
 		case 5: System.out.println("\nÓtima escolha!! Você selecionou o : Refrigerante");
-		price=(float) 8.00;
+		price=8.00f;
 			break;
 		case 6: System.out.println("\nÓtima escolha!! Você selecionou o : Suco de Laranja");
-		price=(float) 13.00;
+		price=13.00f;
 			break;
 			default: System.out.println("Selecione uma opção válida!");
 			
@@ -50,10 +53,10 @@ public class Case {
 	    System.out.println("\nDigite a quantidade: ");
 		quantidade=leia.nextInt();
 		
-		soma=(int) (price*quantidade);
-		total =(float) soma;
+		total=(price*quantidade);
 		
-		System.out.println("\nProduto: "+produto);
+		
+		System.out.printf("\nProduto: ",produto);
 		System.out.printf("Valor total do pedido: R$ %.2f",total);
 		
 
@@ -63,4 +66,4 @@ public class Case {
 	
 	
 
-}
+	}
