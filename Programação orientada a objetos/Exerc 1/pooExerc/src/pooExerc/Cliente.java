@@ -56,25 +56,8 @@ public class Cliente {
 		this.tempodetreino = tempodetreino;
 	}
 
-	public void imprimirinfo() {
-		System.out.println("\n"+nomecliente+" com a idade de: "+idade+" anos "+" , residente na cidade de "+cidade+" Tem como objetivo nos treinos: "+objetivo+" e treina a: "+tempodetreino+" meses");
+	public void visualizar() {
+		System.out.println("\n" + nomecliente + " com a idade de: " + idade + " anos " + " , residente na cidade de "
+				+ cidade + " Tem como objetivo nos treinos: " + objetivo + " e treina a: " + tempodetreino + " meses");
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

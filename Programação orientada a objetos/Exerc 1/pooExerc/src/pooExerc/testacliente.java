@@ -4,12 +4,17 @@ public class testacliente {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Cliente[] lista = new Cliente[2];
-		lista [0] = new Cliente("Ygor Araujo",25,"São Paulo","hipertrofia",3); 
-		lista [1] = new Cliente("Steffanie Maiami",24,"São Paulo","Pojeto Gracyanne Barbosa",6);
-		for (Cliente mostra : lista) {
-			mostra.imprimirinfo();
+		PessoaJuridica pessoa2 = new PessoaJuridica ("de arrascaeta",29,"Rio de janeiro","ganho de mobilidade",3,"18564831456482");
+		PessoaFisica pessoa1 = new PessoaFisica ("Bruno henrique",32,"Rio de janeiro","ganho de massa muscular",12,"12345678900");
+		
+		pessoa2.visualizar();
+		pessoa2.validarcnpj();
+		
+		
+		
+		pessoa1.visualizar();
+		pessoa1.validarcpf();
+		
+		
 		}
 	}
-
-}
